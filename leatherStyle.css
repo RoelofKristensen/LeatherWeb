@@ -1,0 +1,448 @@
+body {	
+	font-family: 'Humanst521 Lt BT';
+	font-size: 18px;
+	margin:0px;
+}
+
+/*--------------------------------------------------Top Navigation--------------------------------------------------*/
+/*-------------------------creating the container-------------------------*/	
+.header-top{
+	position: absolute;
+}
+
+/*-------------------------the shape and style of background-------------------------*/
+.Black-rectangle {
+	position:relative;
+	background-color: black;
+	margin-left: 0px;
+	margin-top:0px;
+	width: 1340px;
+	height:60px;
+	padding-top: 10px ;
+}
+
+/*-------------------------font in container-------------------------*/
+.Black-rectangle p{
+	color:white;
+	font-size:18px;
+}
+/*---------------------------------------------------------------------------------------------------------*/
+	
+
+/*--------------------------------------------------Social Media in Top Navigation--------------------------------------------------*/
+/*-------------------------style of icons-------------------------*/	
+.icon{
+	height:50px;
+	width:50px;
+}
+
+/*-------------------------icon hover style-------------------------*/
+.icon:hover{
+	transform: scale(1.5); 
+}
+/*---------------------------------------------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------Name and logo--------------------------------------------------*/	
+/*-------------------------container for -------------------------*/
+.rhinoContainer {
+	position: relative;
+	text-align: center;
+	margin-top:-10px;
+}
+
+/*-------------------------Left text-------------------------*/
+.rhinoLeft{
+	position: absolute;
+	top: -25px;
+	left: 530px;
+	color: white;
+}	
+
+/*-------------------------right text-------------------------*/
+.rhinoRight{
+	position: absolute;
+	top: -25px;
+	right: 450px;
+	color: white;
+}
+/*---------------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------Hamburger Navigation--------------------------------------------------*/
+/*-------------------------container for checkbox-------------------------*/
+#menuToggle {
+	display: block;
+	position: relative;
+	top: -2px;
+	left: 30px;
+	z-index: 1;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+/*-------------------------styling links-------------------------*/	
+#menuToggle a {
+	text-decoration: none;
+	color: white;
+	transition: color 0.3s ease;
+}
+
+/*-------------------------when checkbox is clicked-------------------------*/
+#menuToggle input {
+	display: block;
+	width: 40px;
+	height: 32px;
+	position: absolute;
+	top: -7px;
+	left: -5px;
+	cursor: pointer;
+	opacity: 0; 
+	z-index: 2; 
+	-webkit-touch-callout: none;
+}	
+
+/*-------------------------stripes that create the hamburger-------------------------*/	
+#menuToggle span {
+	display: block;
+	width: 33px;
+	height: 4px;
+	margin-bottom: 5px;
+	position: relative;
+	background: white;
+	border-radius: 3px;
+	z-index: 1;
+	transform-origin: 4px 0px;
+	transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;
+}
+
+/*-------------------------animation alignment-------------------------*/
+#menuToggle span:nth-last-child(2) {
+	transform-origin: 0% 100%;
+}
+
+/*-------------------------top stripe transform-------------------------*/	
+#menuToggle input:checked ~ span {
+	opacity: 1;
+	transform: rotate(45deg) translate(-2px, -1px);
+	background: white;
+}
+
+/*-------------------------middel stripe disapear-------------------------*/	
+#menuToggle input:checked ~ span:nth-last-child(3) {
+	opacity: 0;
+	transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*-------------------------bottem stripe transform-------------------------*/	
+#menuToggle input:checked ~ span:nth-last-child(2) {
+	transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*-------------------------listed links box-------------------------*/	
+#menu {
+	position: relative;
+	width: 250px;
+	margin: -100px 0 0 -180px;
+
+	padding-top: 125px;
+	background: black;
+	list-style-type: none;
+	visibility: hidden;
+}
+
+/*-------------------------text in list-------------------------*/
+#menu li {
+	right:200;
+	padding: 10px 0;
+	font-size: 22px;
+}
+
+/*-------------------------when clicked made visible-------------------------*/
+#menuToggle input:checked ~ ul {
+	visibility: visible;
+	}
+/*---------------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------inventory styling--------------------------------------------------*/
+/*-------------------------inventory image style-------------------------*/
+#display{
+	height:350px;
+	width:250px;
+}
+
+/*-------------------------styling the trolly button-------------------------*/	
+.trollyBtn{
+	border-radius: 50%;
+	border: none;
+	height:60px;
+	width:60px;
+	margin-top:50px;
+}
+
+/*-------------------------trolly over button-------------------------*/
+.trollyImg{
+	border-radius: 50%;
+	border: none;
+	height:60px;
+	width:60px;
+	margin-left:-5px;
+}
+/*---------------------------------------------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------PopUp cart--------------------------------------------------*/
+/*-------------------------back canvas that covers screen-------------------------*/
+.cartCanvas{
+	display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+	margin-left:500px;
+    width: 100%; 
+    height: 100%;
+    overflow: auto;
+}
+
+/*-------------------------styling the list-------------------------*/
+.cartPopUp ul{
+	left:600px;
+	clear: both;
+	float: center;
+	margin-left:15px;
+	width: 350px;
+	padding: 10px;
+	list-style-type: none;
+	background: white;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+	z-index:12165131;
+}
+
+/*-------------------------form to work on-------------------------*/
+.cartPopUpBlock{
+	width:400px;
+	padding-top:30px;
+	padding-bottom:30px;
+	border-radius:4px;
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+	background-color:white;
+}
+
+/*-------------------------close button-------------------------*/	
+.cartCloseButton{
+	float:right;
+	margin-top:-20px;
+	margin-right:10px;
+	background: 0;
+	border: 0;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+/*-------------------------style listed item-------------------------*/
+.cartProductListed{
+	clear: left;
+	padding: 6px 0;
+	min-height: 25px;
+}
+
+/*-------------------------name of product-------------------------*/
+.cartProductName{
+	font-size:18px;
+	float:left;
+	width:60%;
+}
+
+/*-------------------------quantity element-------------------------*/
+.cartQuantity{
+	margin-top:-18px;
+	float: left;
+	width: 15%;
+}
+
+/*-------------------------style the quantity slider-------------------------*/
+.cartProductQuantity{
+	width: 30px;
+	height: 18px;
+	padding: 2px 4px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	font-size: 13px;
+	text-align: right;
+	transition: border linear 0.2s, box-shadow linear 0.2s;
+	-webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+	-moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+
+/*-------------------------remove container-------------------------*/
+.cartRemove{
+	margin-top:-20px;
+	float: left;
+	width: 7%;
+}
+
+/*-------------------------remove button-------------------------*/	
+.cartRemoveButton{
+	width: 18px;
+	height: 19px;
+	margin: 0px 0 0;
+	padding: 0;
+	background: #b7b7b7;
+	border: 1px solid #a3a3a3;
+	border-radius: 3px;
+	color: #fff;
+	font-size: 13px;
+	opacity: 0.70;
+	cursor: pointer;
+	font:bold;
+}
+
+/*-------------------------price section-------------------------*/
+.cartPrice{
+	float: left;
+	width: 16%;
+	text-align: left;
+	font-size:18px;
+}
+
+/*-------------------------bottom section of form-------------------------*/
+.cartFooter{
+	clear: left;
+}
+
+/*-------------------------subtotal-------------------------*/
+.CartSubTotal{
+	bottom: 18px;
+	float:left;
+	padding-top:-1px;
+	padding-left: 6px;
+	left: 10px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+/*-------------------------checkout button-------------------------*/
+.CartCheckoutButton{
+	float:right;
+	margin-top: -10px;
+	right: 10px;
+	min-width: 153px;
+	height: 33px;
+	margin-right: 20px;
+	padding: 0 9px;
+	border:0px;
+	border-radius: 5px;
+	color: white;
+	cursor: pointer;
+	background: black;
+}
+/*---------------------------------------------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------Information form--------------------------------------------------*/
+/*-------------------------Fields in information form-------------------------*/
+.formFields{
+	border:0px;
+	margin-left:40px;
+	width:900px;
+	height:30px;
+	border-radius: 5px;
+	padding-left:5px;
+	background-color:#e8eeef;	
+}	
+
+/*-------------------------ship off button-------------------------*/
+.shipBtn{
+	left:10px;
+	margin-left:20px;
+	border:0;
+	height:50px;
+	padding: 0px 650px;
+	background-color:black;
+	text-align:center;
+	color:white;
+}
+/*---------------------------------------------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------footer--------------------------------------------------*/	
+/*-------------------------footer container-------------------------*/
+.pageFooter{
+	position: absolute;
+}
+
+/*-------------------------background shape-------------------------*/
+.fBlack-rectangle {
+	background-color: black;
+	margin-left: 0px;
+	margin-bottom:0px;
+	width: 1340px;
+	height:155px;
+	padding-top: 10px ;
+	text-align:center;
+}
+
+/*-------------------------text in footer-------------------------*/
+.fBlack-rectangle p{
+	font-size:18px;
+}
+/*---------------------------------------------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------News letter team--------------------------------------------------*/
+/*-------------------------join button-------------------------*/
+#joinBtn{
+	border: 2px solid grey;
+	background-color: grey;
+	padding: 4px 6px;
+	font-size:18px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;	
+}
+
+/*-------------------------PopUp-------------------------*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+/*-------------------------Content in popup-------------------------*/
+.modal-content {
+    background-color: black;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+	color:white;
+}
+
+/*-------------------------close button-------------------------*/
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/*-------------------------Effect when hovering over button-------------------------*/
+ .close:hover,
+ .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+/*---------------------------------------------------------------------------------------------------------*/	

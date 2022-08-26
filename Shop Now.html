@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!-- What displays on the tab -->
+		<title>
+			Shop Now
+		</title>
+		<link rel="stylesheet" href="leatherStyle.css" />	
+		<script src="leatherScript.js" async></script>
+	</head>
+	<body>
+<!----------------------------------------------Header------------------------------------------------------>
+		<header>
+			
+			<div class="header-top">
+			<!----------------------------------Shape to work on----------------------------------->
+				<div class="Black-rectangle">
+					<!----------------------------------social media links----------------------------------->
+						<p style="float:left; margin-top:-0px" > 
+							<a href="http://www.instagram.com/" >
+								<img class= "icon" src="Instagram.png">
+							</a>
+							<span> </span>
+							<a href="https://twitter.com/">
+								<img class= "icon" src="Twitter.png">
+							</a>
+							<span> </span>
+							<a href="http://www.facebook.com/" >
+								<img class="icon "src="facebook.png" >
+							</a>
+						</p>
+					<!----------------------------------hamburger navigation----------------------------------->
+						<p>
+							<nav role="navigation">
+								<div id="menuToggle" style="float:right;">
+									<input type="checkbox" />
+									<span></span>
+									<span></span>
+									<span></span>
+									<ul id="menu">
+										<li><a href="#">Home</a></li>
+										<li><a href="#">About the Leather</a></li>
+										<li><a href="#">DIY Methods</a></li>
+										<li><a href="#">Brick & Mortar</a></li>
+										<li><a href="Shop Now.html">Shop Now</a></li>
+									</ul>
+								</div>
+							</nav>
+						</p>
+					<!----------------------------------name and logo----------------------------------->
+						<p> 
+							<div class="rhinoContainer">
+								<img height="150" width="150 "src="Rhino.png" style=" float:center; margin-top: -80px;">
+								<div class="rhinoLeft"> <h1>Inkwali</h1></div>
+								<div class="rhinoRight"><h1>Yenkosi</h1></div>
+							</div>
+						</p>
+						
+				</div> 
+			</div>
+			<img src="products.jpg"  >
+		</header>
+
+<!----------------------------------------------start of shopping------------------------------------------------------>	
+		<h1 align="center">Shop Now!<h1>
+		<hr align="center" width = "500">
+
+<!----------------------------------------------table to structure------------------------------------------------------>
+		<table border = "0" cellpadding= "0" cellspacing="10" >
+		<!----------------------------------row 1----------------------------------->
+			<tr>
+			<!----------------------------------colum 1----------------------------------->
+				<td style="border: 1px solid grey;">
+					<figure>
+						<img  id ="display" src="9.jpg">
+						<figcaption style="font-size:18px; text-align:center;"> 
+							BILLY J SPORT SUEDE<br>
+							lEATHER<br>
+							Rebels never die<br>
+							R3800.00<br>
+							<button id="cartButton1" class="trollyBtn">
+								<img class="trollyImg" src="Trolley.png">
+							</button>
+						</figcaption>
+					</figure>
+					<!----------------------------------------------Item 1 Popup----------------------------------------------->
+						<div id="item1" class="cartCanvas">
+							<div class="cartPopUp">
+								<form class="cartPopUpBlock" oninput="total1.value=parseInt(amount1.value)*parseInt(price1.value)">
+									<button type="button" id="close1" class="cartCloseButton">x</button>
+									<ul>
+										<li class="cartProductListed">
+											<div class="cartProductName">
+												BILLY J SPORT SUEDE lEATHER
+											</div>
+											
+											<div class="cartQuantity">
+												<input id="amount1" class="cartProductQuantity" type="number" value="1" >
+											</div>
+											
+											<div class="cartRemove">
+												<button  type="button" class="cartRemoveButton">x</button>
+											</div>
+											
+											<div class="cartPrice">
+												<input id="price1" type="hidden" value="3800">
+												R3800
+												
+											</div>
+										</li>
+									</ul>
+									<div class="cartFooter">
+										<div class="CartSubTotal">
+											Subtotal:R <output name="total1" for="amount1 price1"></output>
+										</div>
+										<a href="Check out.html">
+											<button class="CartCheckoutButton" type="button" >
+												Check out
+											</button>
+										</a>
+									
+									</div>
+								</form>
+							</div>
+							<script>
+								var cartButton1=document.getElementById("item1");
+								var itemButton1=document.getElementById("cartButton1");
+								itemButton1.onclick = function () {
+									item1.style.display = "block";
+								}
+								var cartClose = document.getElementById("close1")
+								cartClose.onclick = function(){
+									item1.style.display = "none";
+								}
+								window.onclick = function (event) {
+									if (event.target == item1) {
+										item1.style.display = "none";
+									}
+								}
+							</script>
+						</div>
+					<!---------------------------------------------------------------------------------------------------------->
+					</td>
+			<!----------------------------------colum 2----------------------------------->	
+				<td style="border: 1px solid grey;">
+					<figure>
+						<img  id ="display" src="5.jpg">
+						<figcaption style="font-size:18px; text-align:center;"> 
+							BILLY J SNUFF 2 TONE<br>
+							lEATHER<br>
+							Rebels never die<br>
+							R4200.00<br>
+							<button id="cartButton2" class="trollyBtn">
+								<img class="trollyImg" src="Trolley.png">
+							</button>
+						</figcaption>	
+					</figure>
+				<!----------------------------------------------Item 2 Popup----------------------------------------------->
+					<div id="item2" class="cartCanvas">
+						<div class="cartPopUp">
+							<form class="cartPopUpBlock" oninput="total2.value=parseInt(amount2.value)*parseInt(price2.value)">
+								<button type="button" id="close2" class="cartCloseButton">x</button>
+								<ul>
+									<li class="cartProductListed">
+										<div class="cartProductName">
+											BILLY J SNUFF 2 TONE
+											lEATHER
+										</div>
+										
+										<div class="cartQuantity">
+											<input id="amount2" class="cartProductQuantity" type="number" value="1" >
+										</div>
+										
+										<div class="cartRemove">
+											<button  type="button" class="cartRemoveButton">x</button>
+										</div>
+										
+										<div class="cartPrice">
+											<input id="price2" type="hidden" value="4200">
+											R4200
+											
+										</div>
+									</li>
+								</ul>
+								<div class="cartFooter">
+									<div class="CartSubTotal">
+										Subtotal:R <output name="total2" for="amount2 price2"></output>
+									</div>
+									<a href="Check out.html">
+										<button class="CartCheckoutButton" type="button" >
+											Check out
+										</button>
+									</a>
+								
+								</div>
+							</form>
+						</div>
+						<script>
+							var cartButton2=document.getElementById("item2");
+							var itemButton2=document.getElementById("cartButton2");
+							itemButton2.onclick = function () {
+								item2.style.display = "block";
+							}
+							var cartClose = document.getElementById("close2")
+							cartClose.onclick = function(){
+								item2.style.display = "none";
+							}
+							window.onclick = function (event) {
+								if (event.target == item2) {
+									item2.style.display = "none";
+								}
+							}
+						</script>
+					</div>
+				<!-------------------------------------------------------------------------------------------------------------->
+				</td>
+			<!----------------------------------colum 3----------------------------------->	
+				<td style="border: 1px solid grey;">
+					<figure>
+						<img  id ="display" src="8.jpg">
+						<figcaption style="font-size:18px; text-align:center;"> 
+							BJ CLASSIC LEATHER<br>
+							JACKET<br>
+							Rebels never die<br>
+							R3000.00<br>
+							<button id="cartButton3" class="trollyBtn">
+								<img class="trollyImg" src="Trolley.png">
+							</button>
+						</figcaption>	
+					</figure>
+					<!----------------------------------------------Item 3 Popup----------------------------------------------->
+						<div id="item3" class="cartCanvas">
+							<div class="cartPopUp">
+								<form class="cartPopUpBlock" oninput="total3.value=parseInt(amount3.value)*parseInt(price3.value)">
+									<button type="button" id="close3" class="cartCloseButton">x</button>
+									<ul>
+										<li class="cartProductListed">
+											<div class="cartProductName">
+												BJ CLASSIC LEATHER JACKET
+											</div>
+											
+											<div class="cartQuantity">
+												<input id="amount3" class="cartProductQuantity" type="number" value="1" >
+											</div>
+											
+											<div class="cartRemove">
+												<button  type="button" class="cartRemoveButton">x</button>
+											</div>
+											
+											<div class="cartPrice">
+												<input id="price3" type="hidden" value="3000">
+												R3000
+												
+											</div>
+										</li>
+									</ul>
+									<div class="cartFooter">
+										<div class="CartSubTotal">
+											Subtotal:R <output name="total3" for="amount3 price3"></output>
+										</div>
+										<a href="Check out.html">
+											<button class="CartCheckoutButton" type="button" >
+												Check out
+											</button>
+										</a>
+									
+									</div>
+								</form>
+							</div>
+							<script>
+								var cartButton3=document.getElementById("item3");
+								var itemButton3=document.getElementById("cartButton3");
+								itemButton3.onclick = function () {
+									item3.style.display = "block";
+								}
+								var cartClose = document.getElementById("close3")
+								cartClose.onclick = function(){
+									item3.style.display = "none";
+								}
+								window.onclick = function (event) {
+									if (event.target == item3) {
+										item3.style.display = "none";
+									}
+								}
+							</script>
+						</div>
+					<!-------------------------------------------------------------------------------------------------------------->
+				</td>	
+			<!----------------------------------colum 4----------------------------------->	
+				<td style="border: 1px solid grey;">
+					<figure>
+						<img  id ="display" src="4.jpg">
+						<figcaption style="font-size:18px; text-align:center;"> 
+							BJ SPORT lEATHER JACKET<br>
+							Rebels never die<br>
+							R3500.00<br>
+							<button id="cartButton4" class="trollyBtn">
+								<img class="trollyImg" src="Trolley.png">
+							</button>
+						</figcaption>	
+					</figure>
+					<!----------------------------------------------Item 4 Popup----------------------------------------------->
+						<div id="item4" class="cartCanvas">
+							<div class="cartPopUp">
+								<form class="cartPopUpBlock" oninput="total4.value=parseInt(amount4.value)*parseInt(price4.value)">
+									<button type="button" id="close4" class="cartCloseButton">x</button>
+									<ul>
+										<li class="cartProductListed">
+											<div class="cartProductName">
+												BJ SPORT LEATHER JACKET
+											</div>
+											
+											<div class="cartQuantity">
+												<input id="amount4" class="cartProductQuantity" type="number" value="1" >
+											</div>
+											
+											<div class="cartRemove">
+												<button  type="button" class="cartRemoveButton">x</button>
+											</div>
+											
+											<div class="cartPrice">
+												<input id="price4" type="hidden" value="3000.00">
+												R3500.00
+												
+											</div>
+										</li>
+									</ul>
+									<div class="cartFooter">
+										<div class="CartSubTotal">
+											Subtotal:R <output name="total4" for="amount4 price4"></output>
+										</div>
+										<a href="Check out.html">
+											<button class="CartCheckoutButton" type="button" >
+												Check out
+											</button>
+										</a>
+									
+									</div>
+								</form>
+							</div>
+							<script>
+								var cartButton4=document.getElementById("item4");
+								var itemButton4=document.getElementById("cartButton4");
+								itemButton4.onclick = function () {
+									item4.style.display = "block";
+								}
+								var cartClose = document.getElementById("close4")
+								cartClose.onclick = function(){
+									item4.style.display = "none";
+								}
+								window.onclick = function (event) {
+									if (event.target == item4) {
+										item4.style.display = "none";
+									}
+								}
+							</script>
+						</div>
+					<!-------------------------------------------------------------------------------------------------------------->
+				</td>
+			</tr>
+		<!----------------------------------row 2----------------------------------->
+			<tr >
+			<!----------------------------------colum 5----------------------------------->
+				<td style="border: 1px solid grey;">
+					<figure>
+						<img id ="display" src="7.jpg">
+						<figcaption style="font-size:18px; text-align:center;"> 
+							BLACK BJ lEATHER JACKET<br>
+							Rebels never die<br>
+							R4000.00<br>
+							<button id="cartButton5" class="trollyBtn">
+								<img class="trollyImg" src="Trolley.png">
+							</button>
+						</figcaption>	
+					</figure>
+					<!----------------------------------------------Item 5 Popup----------------------------------------------->
+						<div id="item5" class="cartCanvas">
+							<div class="cartPopUp">
+								<form class="cartPopUpBlock" oninput="total5.value=parseInt(amount5.value)*parseInt(price5.value)">
+									<button type="button" id="close5" class="cartCloseButton">x</button>
+									<ul>
+										<li class="cartProductListed">
+											<div class="cartProductName">
+												BLACK BJ lEATHER JACKET
+											</div>
+											
+											<div class="cartQuantity">
+												<input id="amount5" class="cartProductQuantity" type="number" value="1" >
+											</div>
+											
+											<div class="cartRemove">
+												<button  type="button" class="cartRemoveButton">x</button>
+											</div>
+											
+											<div class="cartPrice">
+												<input id="price5" type="hidden" value="4000">
+												R4000
+												
+											</div>
+										</li>
+									</ul>
+									<div class="cartFooter">
+										<div class="CartSubTotal">
+											Subtotal:R <output name="total5" for="amount5 price5"></output>
+										</div>
+										<a href="Check out.html">
+											<button class="CartCheckoutButton" type="button" >
+												Check out
+											</button>
+										</a>
+									
+									</div>
+								</form>
+							</div>
+							<script>
+								var cartButton5=document.getElementById("item5");
+								var itemButton5=document.getElementById("cartButton5");
+								itemButton5.onclick = function () {
+									item5.style.display = "block";
+								}
+								var cartClose = document.getElementById("close5")
+								cartClose.onclick = function(){
+									item5.style.display = "none";
+								}
+								window.onclick = function (event) {
+									if (event.target == item5) {
+										item5.style.display = "none";
+									}
+								}
+							</script>
+						</div>
+					<!-------------------------------------------------------------------------------------------------------------->
+				</td>
+			<!----------------------------------colum 6----------------------------------->	
+				<td style="border: 1px solid grey;">
+					<figure>
+						<img  id ="display" src="10.jpg">
+						<figcaption style="font-size:18px; text-align:center;"> 
+							CHOC LEATHER BAG<br>
+							Rebels never die<br>
+							R3850.00<br>
+							<button id="cartButton6" class="trollyBtn">
+								<img class="trollyImg" src="Trolley.png">
+							</button>
+						</figcaption>	
+					</figure>
+					<!----------------------------------------------Item 6 Popup----------------------------------------------->
+						<div id="item6" class="cartCanvas">
+							<div class="cartPopUp">
+								<form class="cartPopUpBlock" oninput="total6.value=parseInt(amount6.value)*parseInt(price6.value)">
+									<button type="button" id="close6" class="cartCloseButton">x</button>
+									<ul>
+										<li class="cartProductListed">
+											<div class="cartProductName">
+												CHOC LEATHER BAG
+											</div>
+											
+											<div class="cartQuantity">
+												<input id="amount6" class="cartProductQuantity" type="number" value="1" >
+											</div>
+											
+											<div class="cartRemove">
+												<button  type="button" class="cartRemoveButton">x</button>
+											</div>
+											
+											<div class="cartPrice">
+												<input id="price6" type="hidden" value="3850">
+												R3850
+												
+											</div>
+										</li>
+									</ul>
+									<div class="cartFooter">
+										<div class="CartSubTotal">
+											Subtotal:R <output name="total6" for="amount6 price6"></output>
+										</div>
+										<a href="Check out.html">
+											<button class="CartCheckoutButton" type="button" >
+												Check out
+											</button>
+										</a>
+									
+									</div>
+								</form>
+							</div>
+							<script>
+								var cartButton6=document.getElementById("item6");
+								var itemButton6=document.getElementById("cartButton6");
+								itemButton6.onclick = function () {
+									item6.style.display = "block";
+								}
+								var cartClose = document.getElementById("close6")
+								cartClose.onclick = function(){
+									item6.style.display = "none";
+								}
+								window.onclick = function (event) {
+									if (event.target == item6) {
+										item6.style.display = "none";
+									}
+								}
+							</script>
+						</div>
+					<!-------------------------------------------------------------------------------------------------------------->
+				</td>
+			<!----------------------------------colum 7----------------------------------->	
+				<td style="border: 1px solid grey;">
+					<figure>
+						<img  id ="display" src="11.jpg">
+						<figcaption style="font-size:18px; text-align:center;"> 
+							BROWN LEATHER BAG<br>
+							Rebels never die<br>
+							R2775.00<br>
+							<button id="cartButton7" class="trollyBtn">
+								<img class="trollyImg" src="Trolley.png">
+							</button>
+							
+						</figcaption>	
+					</figure>
+					<!----------------------------------------------Item 7 Popup----------------------------------------------->
+						<div id="item7" class="cartCanvas">
+							<div class="cartPopUp">
+								<form class="cartPopUpBlock" oninput="total7.value=parseInt(amount7.value)*parseInt(price7.value)">
+									<button type="button" id="close7" class="cartCloseButton">x</button>
+									<ul>
+										<li class="cartProductListed">
+											<div class="cartProductName">
+												BROWN LEATHER BAG
+											</div>
+											
+											<div class="cartQuantity">
+												<input id="amount7" class="cartProductQuantity" type="number" value="1" >
+											</div>
+											
+											<div class="cartRemove">
+												<button  type="button" class="cartRemoveButton">x</button>
+											</div>
+											
+											<div class="cartPrice">
+												<input id="price7" type="hidden" value="2775">
+												R2775
+											</div>
+										</li>
+									</ul>
+									<div class="cartFooter">
+										<div class="CartSubTotal">
+											Subtotal:R <output name="total7" for="amount7 price7"></output>
+										</div>
+										<a href="Check out.html">
+											<button class="CartCheckoutButton" type="button" >
+												Check out
+											</button>
+										</a>
+									
+									</div>
+								</form>
+							</div>
+							<script>
+								var cartButton7=document.getElementById("item7");
+								var itemButton7=document.getElementById("cartButton7");
+								itemButton7.onclick = function () {
+									item7.style.display = "block";
+								}
+								var cartClose = document.getElementById("close7")
+								cartClose.onclick = function(){
+									item7.style.display = "none";
+								}
+								window.onclick = function (event) {
+									if (event.target == item7) {
+										item7.style.display = "none";
+									}
+								}
+							</script>
+						</div>
+					<!-------------------------------------------------------------------------------------------------------------->
+				</td>
+			<!----------------------------------colum 8----------------------------------->	
+				<td style="border: 1px solid grey; ">
+					<figure>
+						<img  id ="display" src="26.jpg">
+						<figcaption style="font-size:18px; text-align:center;"> 
+							SA BIKER JACKET<br>
+							Rebels never die<br>
+							R3950.00<br>
+							<button id="cartButton8" class="trollyBtn">
+								<img class="trollyImg" src="Trolley.png">
+							</button>
+							
+						</figcaption>	
+					</figure>
+					<!----------------------------------------------Item 8 Popup----------------------------------------------->
+						<div id="item8" class="cartCanvas">
+							<div class="cartPopUp">
+								<form class="cartPopUpBlock" oninput="total8.value=parseInt(amount8.value)*parseInt(price8.value)">
+									<button type="button" id="close8" class="cartCloseButton">x</button>
+									<ul>
+										<li class="cartProductListed">
+											<div class="cartProductName">
+												SA BIKER JACKET
+											</div>
+											
+											<div class="cartQuantity">
+												<input id="amount8" class="cartProductQuantity" type="number" value="1" >
+											</div>
+											
+											<div class="cartRemove">
+												<button  type="button" class="cartRemoveButton">x</button>
+											</div>
+											
+											<div class="cartPrice">
+												<input id="price8" type="hidden" value="3950">
+												R3950
+												
+											</div>
+										</li>
+									</ul>
+									<div class="cartFooter">
+										<div class="CartSubTotal">
+											Subtotal:R <output name="total8" for="amount8 price8"></output>
+										</div>
+										<a href="Check out.html">
+											<button class="CartCheckoutButton" type="button" >
+												Check out
+											</button>
+										</a>
+									
+									</div>
+								</form>
+							</div>
+							<script>
+								var cartButton8=document.getElementById("item8");
+								var itemButton8=document.getElementById("cartButton8");
+								itemButton8.onclick = function () {
+									item8.style.display = "block";
+								}
+								var cartClose = document.getElementById("close8")
+								cartClose.onclick = function(){
+									item8.style.display = "none";
+								}
+								window.onclick = function (event) {
+									if (event.target == item8) {
+										item8.style.display = "none";
+									}
+								}
+							</script>
+						</div>
+					<!-------------------------------------------------------------------------------------------------------------->
+				</td>
+			</tr>
+		
+		</table>
+<!----------------------------------------------Footer------------------------------------------------------>	
+		<footer>
+		
+			<div class="pageFooter">
+			<!----------------------------------shape to work on----------------------------------->
+				<div class="fBlack-rectangle">
+				<!----------------------------------Information----------------------------------->
+					<p style="color:white;"> This website was designed by Roelof Kristensen 7566 and ALL copytrights are reserved</p>
+					<hr align="center" width="100" color="grey">
+					<p style="color:grey;">DIY About Home Brick & Mortar Shop Now</p>
+					<p style="color:white;">Join Our Newsletter team! 
+						<!---------------------email field---------------------->
+						<input type="email" placeholder="example@gmail.com">
+						<!---------------------join button---------------------->
+						<button id="joinBtn">Join </button>
+						<!---------------------popup when button is pressed---------------------->	
+						<div id="myModal" class="modal">
+							<div class="modal-content">
+								<span class="close">&times;</span>
+								<p>Thank for your joining our news letter</p>
+							</div>
+							<script>
+								// Js for footer popup
+								var modal = document.getElementById("myModal");
+								
+								var btn = document.getElementById("joinBtn");
+								
+								var span = document.getElementsByClassName("close")[0];
+								
+								btn.onclick = function () {
+									modal.style.display = "block";
+								}
+							   
+								span.onclick = function () {
+									modal.style.display = "none";
+								}
+								
+								window.onclick = function (event) {
+									if (event.target == modal) {
+										modal.style.display = "none";
+									}
+								}
+							</script>
+						</div>
+					</p>		
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

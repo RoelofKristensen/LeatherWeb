@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>
+			Check Out
+		</title>
+		<link rel="stylesheet" href="leatherStyle.css" />
+		<script src="leatherScript" async></script>
+	</head>
+	
+	<body>
+	<!----------------------------------------------Header------------------------------------------------------>
+		<header>
+		
+			<div class="header-top" style="position:relative;">
+			<!----------------------------------Shape to work on----------------------------------->
+				<div class="Black-rectangle">
+					<!----------------------------------social media links----------------------------------->
+						<p style="float:left; margin-top:-0px" > 
+							<a href="http://www.instagram.com/" >
+								<img class= "icon" src="Instagram.png">
+							</a>
+							<span> </span>
+							<a href="https://twitter.com/">
+								<img class= "icon" src="Twitter.png">
+							</a>
+							<span> </span>
+							<a href="http://www.facebook.com/" >
+								<img class="icon "src="facebook.png" >
+							</a>
+						</p>
+					<!----------------------------------hamburger navigation----------------------------------->
+						<p>
+							<nav role="navigation">
+								<div id="menuToggle" style="float:right;">
+									<input type="checkbox" />
+									<span></span>
+									<span></span>
+									<span></span>
+									<ul id="menu">
+										<li><a href="#">Home</a></li>
+										<li><a href="#">About the Leather</a></li>
+										<li><a href="#">DIY Methods</a></li>
+										<li><a href="#">Brick & Mortar</a></li>
+										<li><a href="Shop Now.html">Shop Now</a></li>
+									</ul>
+								</div>
+							</nav>
+						</p>
+					<!----------------------------------name and logo----------------------------------->
+						<p> 
+							<div class="rhinoContainer">
+								<img height="150" width="150 "src="Rhino.png" style=" float:center; margin-top: -80px;">
+								<div class="rhinoLeft"> <h1>Inkwali</h1></div>
+								<div class="rhinoRight"><h1>Yenkosi</h1></div>
+							</div>
+						</p>
+						
+				</div> 
+			</div>	
+		</header>
+	
+	<!----------------------------------------------Form heading------------------------------------------------------>	
+		<h1 align="center"> Just one more step...</h1>
+		<p align="center">Before your new Leather Jackets can leave we need you fill in the following form</p>
+	
+	<!----------------------------------------------Form thats a table with 17 rows----------------------------------------------->
+		<form style="margin:auto; background-color:#f4f7f8; width:1000px"  name="DetailsForm" action="Thanks.html" onsubmit="return validation()" method="post" >
+			<table cellspacing="20" >
+			<!----------------------------------row 1 section 1----------------------------------->
+				<tr>
+				<!-------------------------heading-------------------------->
+					<td>
+						<h1 style="margin-left:40px;">1. Customer Info</h1>
+					</td>
+				</tr>
+			<!-------------------------row 2-------------------------->				
+				<tr>
+				<!-------------------------name-------------------------->
+					<td>
+						<input class="formFields" size=65 type="text" name="Name" placeholder="Your Full Name *"required/>
+					</td>
+				</tr>
+			<!-------------------------row 3-------------------------->
+				<tr>
+				<!-------------------------email-------------------------->
+					<td>
+						<input class="formFields" type="email" name="Email" placeholder="Your Email *"required/>
+					</td>
+				</tr>
+			<!-------------------------row 4-------------------------->
+				<tr>
+				<!-------------------------phone number-------------------------->
+					<td>
+						<input class="formFields" type="number" name="PhoneNumber" placeholder="Your Phone Number *"required/>
+					</td>
+				</tr>
+				
+			<!----------------------------------row 5 section 2----------------------------------->
+				<tr>
+				<!-------------------------Heading-------------------------->
+					<td>
+						<h1 style="margin-left:40px;">2. Shipping Detail</h1>
+					</td>
+				</tr>
+			<!-------------------------row 6-------------------------->
+				<tr>
+				<!-------------------------street-------------------------->
+					<td>
+						<input class="formFields" type="text" name="Street" placeholder="Your Street Number and Name *"required/>
+					</td>
+				</tr>
+			<!-------------------------row 7-------------------------->
+				<tr>
+				<!-------------------------city-------------------------->
+					<td>
+						<input class="formFields" type="text" name="City"  placeholder="Your City *"required/>
+					</td>
+				</tr>
+			<!-------------------------row 8-------------------------->
+				<tr>
+				<!-------------------------suburb-------------------------->
+					<td>
+						<input class="formFields" type="text" name="Suburb" placeholder="Your Suburb *" required/>
+					</td>
+				</tr>
+				
+			<!----------------------------------row 9 section 3----------------------------------->	
+				<tr>
+					<td>
+						<p style="margin-left:40px;">Province</p>
+					</td>
+				</tr>
+			<!-------------------------row 10-------------------------->
+				<tr>
+				<!-------------------------province-------------------------->
+					<td>
+						<select class="formFields" name="Province" >
+							<option value="Gauteng">Gauteng</option>
+							<option value="Eastern Cape">Eastern Cape</option>
+							<option value="Northern Cape">Northern Cape</option>
+							<option value="North West">North West</option>
+							<option value="Free State">Free State</option>
+							<option value="Kwazulu Natal">Kwazulu Natal</option>
+							<option value="Western Cape">Western Cape</option>
+							<option value="Limpopo">Limpopo</option>
+							<option value="Mpumalanga">Mpumalanga</option>
+						
+						</select>
+					</td>
+				</tr>
+			<!-------------------------row 11-------------------------->
+				<tr>
+				<!-------------------------ZIPCODE-------------------------->
+					<td>
+						<input class="formFields" type="text" name="ZIPCODE" placeholder="Your ZIP CODE *"required/>
+					</td>
+				</tr>
+			<!-------------------------row 12-------------------------->
+				<tr>
+				<!-------------------------Special Instructions-------------------------->
+					<td>
+						<textarea class="formFields" id="otherCommentsText" rows="5" cols="20" spellcheck="true" placeholder="Special Instructions">
+						</textarea>
+					</td>
+				</tr>
+				
+			<!----------------------------------row 13 section 4----------------------------------->
+				<tr>
+				<!-------------------------Heading-------------------------->
+					<td>
+						<h1 style="margin-left:40px;">3. Billing Detail</h1>
+					</td>
+				</tr>
+			<!-------------------------row 14-------------------------->
+				<tr>
+				<!-------------------------name on card-------------------------->
+					<td>
+						<input class="formFields" type="text" name="NameOnCard" placeholder="Name on Card *" required/>
+					</td>
+				</tr>
+			<!-------------------------row 15-------------------------->
+				<tr>
+				<!-------------------------card number-------------------------->
+					<td>
+						<input class="formFields" type="text" name="CardNumber" placeholder="Credit Card Number *" required/>
+					</td>
+				</tr>
+			<!-------------------------row 16-------------------------->
+				<tr>
+				<!-------------------------expiry date-------------------------->
+					<td>
+						<input class="formFields" type="text" name="ExpireDates" placeholder="Expire date *" required/>
+					</td>
+				</tr>
+			<!-------------------------row 17-------------------------->
+				<tr>
+				<!-------------------------CVV-------------------------->
+					<td>
+						<input class="formFields" type="text" name="CVV" placeholder="CVV *" />
+					</td>
+				</tr>
+			</table>
+			
+		<!----------------------------------Terms and Conditions withb ship buttton----------------------------------->
+			<form style="background-color:#f4f7f8;height:250px; padding-left:60px;margin-left:-50px">
+				<br>
+				<!-------------------------terms and conditions-------------------------->
+				<p style="margin-left:40px;">Do you agree to our Terms & Conditions<br>
+					<input type="checkbox" id="chkYes" />
+						Yes<br>
+					<input type="checkbox" id="chkNo"/>
+						No
+				</p>	
+				<br>
+				<!-------------------------ship off button to thank you page-------------------------->
+				<input  class="shipBtn" type="submit" value="send" name="Ship Off"> 
+					
+			</form>
+		</form>	
+	</body>
+</html>
